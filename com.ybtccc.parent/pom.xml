@@ -10,6 +10,9 @@
     <version>1.0</version>
     <modules>
         <module>com.ybtccc.registry</module>
+        <module>com.ybtccc.api</module>
+        <module>com.ybtccc.web</module>
+        <module>com.ybtccc.service</module>
     </modules>
 
     <properties>
