@@ -20,6 +20,7 @@
 
     <properties>
         <spring.cloud.version>1.4.6.RELEASE</spring.cloud.version>
+
     </properties>
 
     <build>
