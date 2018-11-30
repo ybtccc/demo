@@ -9,7 +9,8 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
-      defaultZone: http://192.168.197.129:${server.port}/eureka/,http://192.168.197.130:${server.port}/eureka/
+#      defaultZone: http://192.168.197.129:${server.port}/eureka/,http://192.168.197.130:${server.port}/eureka/
+      defaultZone: http://127.0.0.1:${server.port}/eureka/
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 15000
