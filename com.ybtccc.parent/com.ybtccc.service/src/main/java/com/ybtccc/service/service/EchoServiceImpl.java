@@ -23,9 +23,4 @@ public class EchoServiceImpl implements EchoService {
             return "Hello," + msg;
         }
     }
-
-    public String fallback(String msg){
-        return null;
-    }
-
 }
