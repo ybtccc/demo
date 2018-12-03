@@ -19,7 +19,8 @@
     </modules>
 
     <properties>
-        <spring.cloud.version>1.4.6.RELEASE</spring.cloud.version>
+        <!--<spring.cloud.version>1.4.6.RELEASE</spring.cloud.version>-->
+        <spring.cloud.version>2.0.2.RELEASE</spring.cloud.version>
 
     </properties>
 
