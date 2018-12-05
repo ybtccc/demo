@@ -1,7 +1,8 @@
 package com.ybtccc.admin;
 
-import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
@@ -14,6 +15,7 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
 public class AdminApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AdminApplication.class, args);
+        new SpringApplicationBuilder(AdminApplication.class).web(WebApplicationType.SERVLET).run(args);
+
     }
 }
