@@ -20,4 +20,5 @@ spring:
         uri: http://www.163.com
         predicates:
         - Path=/163
+      - id: service
 
