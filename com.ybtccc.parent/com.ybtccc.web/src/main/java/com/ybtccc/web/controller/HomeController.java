@@ -22,12 +22,12 @@ public class HomeController {
     private EchoService echoService;
 
     @RequestMapping("/")
-    @HystrixCommand(
-            fallbackMethod = "fallback",
-            commandProperties = {
-                    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500")
-            },
-            ignoreExceptions = {BizException.class})
+//    @HystrixCommand(
+//            fallbackMethod = "fallback",
+//            commandProperties = {
+//                    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500")
+//            },
+//            ignoreExceptions = {BizException.class})
     public Result index(){
         return Result.success(echoService.echo(UUID.randomUUID().toString()));
     }

@@ -9,8 +9,12 @@ spring:
   application:
     name: com.ybtccc.web
 
+
 management:
   endpoints:
     web:
       exposure:
         include: hystrix.stream
+feign:
+  hystrix:
+    enabled: true

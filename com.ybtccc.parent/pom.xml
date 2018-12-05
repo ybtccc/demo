@@ -14,7 +14,7 @@
         <module>com.ybtccc.web</module>
         <module>com.ybtccc.service</module>
         <module>com.ybtccc.admin</module>
-        <!--<module>com.ybtccc.gateway</module>-->
+        <module>com.ybtccc.gateway</module>
         <module>com.ybtccc.core</module>
     </modules>
 

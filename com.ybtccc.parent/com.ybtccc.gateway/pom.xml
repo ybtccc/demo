@@ -11,5 +11,22 @@
 
     <artifactId>com.ybtccc.gateway</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud </groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <version>${spring.cloud.version}</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>${spring.cloud.version}</version>
+        </dependency>
+    </dependencies>
 </project>
