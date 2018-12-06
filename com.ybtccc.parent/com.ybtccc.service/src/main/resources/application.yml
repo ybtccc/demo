@@ -4,8 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-#      defaultZone: http://192.168.197.129:8761/eureka/,http://192.168.197.130:8761/eureka/
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: http://re.ybtccc.com/eureka/
 spring:
   application:
     name: com.ybtccc.service
