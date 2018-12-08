@@ -16,7 +16,7 @@ spring:
         predicates:
         - Path=/163
       - id: rewriter
-        uri: http://www.baidu.com
+        uri: http://127.0.0.1:9091/act/user
         predicates:
         - Host=web.ybtccc.com**
         - Path=/act/**
