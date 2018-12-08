@@ -24,4 +24,9 @@ spring:
         uri: http://127.0.0.1:9091
         predicates:
         - Host=web.ybtccc.com**
+        filters:
+        - name: RequestRateLimiter
+          args:
+            redis-rate-limiter.replenishRate: 2
+            redis-rate-limiter.burstCapacity: 2
 
