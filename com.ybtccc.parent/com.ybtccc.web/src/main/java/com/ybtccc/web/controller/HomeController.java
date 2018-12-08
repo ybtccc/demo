@@ -32,6 +32,12 @@ public class HomeController {
         return Result.success(echoService.echo(UUID.randomUUID().toString()));
     }
 
+
+    @RequestMapping("/act/user")
+    public Result user(){
+        return Result.success("Hello.User");
+    }
+
     public Result fallback(){
         return Result.limit();
     }
