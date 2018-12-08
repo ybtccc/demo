@@ -5,18 +5,18 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://re.ybtccc.com/eureka/
-
 spring:
   application:
     name: com.ybtccc.gateway
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
       routes:
       - id: 163
         uri: http://www.163.com
         predicates:
         - Path=/163
+      - id: web
+        uri: http://127.0.0.1:9091
+        predicates:
+        - Host=web.ybtccc.com**
 
